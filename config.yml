@@ -1,0 +1,16 @@
+title: My Block list
+description: Hassan Black list for Arabic % English  Websites
+template:
+  repo: my-block-list-template
+  name: my-block-list
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
